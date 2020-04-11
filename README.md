@@ -1,5 +1,5 @@
-# US-Covid19-Map
-An React.js practice for reporting cases of covid19 in U.S.
+# US-COVID19-Map
+An React.js practice for reporting cases of COVID19 in U.S.
 
 ### Screen Shot
 ![](https://i.imgur.com/N3L1uDz.png)
