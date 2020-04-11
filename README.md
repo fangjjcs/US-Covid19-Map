@@ -1,7 +1,7 @@
 # US-COVID19-Map
 An React.js practice for reporting cases of COVID19 in U.S.
 
-Using Flask as a server side, parse open data from https://github.com/fangjjcs/COVID-19, preprocess source data and returns to front-end website.
+Using Flask as server side, parse open data from https://github.com/fangjjcs/COVID-19, preprocess source data and returns to front-end website.
 
 This file only contains front-end codes, back-end files are not included. 
 
