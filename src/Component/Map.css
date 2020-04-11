@@ -1,0 +1,21 @@
+
+svg{
+    width: 100vh;
+    height: 100vh;
+    /* border: solid 1px; */
+}
+
+path{
+    stroke: none;
+    /* fill: #333  ; */
+    transition-duration: 0.5s;
+}
+
+.distrct{
+    fill: #333;
+}
+path:hover{
+    fill: #b99362 ;
+    stroke: #fff 2px;
+}
+  

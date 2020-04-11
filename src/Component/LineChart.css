@@ -1,0 +1,19 @@
+.Line{
+    /* border: solid red;  */
+    /* height: 200px; */
+    margin-top: 40px;
+    width: 450px;
+    color: #333;
+    transition-duration: 1s;
+}
+
+
+
+.c3-axis {
+    fill: #b99362;
+    font-weight: bold;
+  }
+
+.c3-axis-x line {
+    stroke-width: 0.5px;
+}
