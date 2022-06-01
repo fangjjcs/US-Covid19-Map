@@ -7,11 +7,6 @@ app.use(express.static(path.join(__dirname, 'build')));
 
 const url = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_US.csv';
 
-// let myHeaders = new Headers({
-//     'Access-Control-Allow-Origin': '*',
-//     'Content-Type': 'text/plain'
-// });
-
 var fetch = require('node-fetch');
 
 var api_url = url;
