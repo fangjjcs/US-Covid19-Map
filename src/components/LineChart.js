@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
-import './LineChart.css';
 import 'c3/c3.css';
 import c3 from 'c3';
+
+import './LineChart.css';
 
 class LineChart extends Component{
     
@@ -62,8 +63,6 @@ class LineChart extends Component{
     }
      
     render(){
-
-
         return(
             <div className="Line" id="line"></div>
         );

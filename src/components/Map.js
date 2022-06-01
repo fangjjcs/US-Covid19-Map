@@ -1,8 +1,8 @@
 import React from "react";
+
 import './Map.css'
 
 function Map(props) {
-  //console.log(props.data['Montana']);
 
   const mapStates = require('../shared/json/map.json');
   return (

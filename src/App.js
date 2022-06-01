@@ -1,10 +1,11 @@
 import React,{Component} from 'react';
+
+import './App.css';
 import Map from './components/Map';
 import InfoBox from './components/InfoBox';
 import Scale from './components/Scale';
 import Date from './components/Dynamicdata';
 import LineChart from './components/LineChart';
-import './App.css';
 
 const structure = require('./shared/json/state.json');
 

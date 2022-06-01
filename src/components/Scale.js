@@ -1,4 +1,5 @@
 import React from "react";
+
 import './Scale.css'
 
 function Scale() {
