@@ -131,7 +131,7 @@ class App extends Component {
           {this.state.showDynamicMap? <Date data = {this.state.response.date} timeIndex={this.state.index}></Date>:null}
           {this.state.showChart?
           <LineChart series={this.state.NowSeries} date={this.state.response.date}/>: null
-          } d
+          }
         </div>
       </div>
     );
