@@ -19,7 +19,7 @@ function Scale() {
             <div className="n n7"></div>
             <div className="t"> 12k-20k </div>
             <div className="n n8"></div>
-            <div className="t"> >20k </div>
+            <div className="t"> {">"}20k </div>
         </div>
     );
 }
