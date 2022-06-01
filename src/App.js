@@ -79,9 +79,8 @@ class App extends Component {
     const response = await fetch('/api'); 
     console.log(response);
     const body = await response.json();
-    console.log("success");
+    console.log("[Fetch] successfully");
     if (response.status !== 200) throw Error(body.message);
-    
     return body;
   };
  
@@ -116,10 +115,6 @@ class App extends Component {
     }, 1200);
   }
 
-  time=()=>{
-    
-  }
-
   render() {
     
     return(
@@ -127,7 +122,6 @@ class App extends Component {
         <div className="Cockpit">
           <Map className="map" onHover={this.onClick} data={this.state.showDynamicMap?this.state.DynamicColor:this.state.stateColor} timeIndex={this.state.index}/> 
           {this.state.showDynamicMap?<div className="scale"><Scale/></div>:null} 
-          
           <div className="showDyBtn" onClick={this.onClickShowBtn}> Time Series</div>
         </div>
         <div className="InfoBox">
