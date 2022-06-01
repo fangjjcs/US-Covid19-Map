@@ -1,11 +1,12 @@
 import React,{Component} from 'react';
-import Map from './Component/Map';
-import InfoBox from './Component/InfoBox';
-import Scale from './Component/Scale';
-import Date from './Component/Dynamicdata';
-import LineChart from './Component/LineChart';
+import Map from './components/Map';
+import InfoBox from './components/InfoBox';
+import Scale from './components/Scale';
+import Date from './components/Dynamicdata';
+import LineChart from './components/LineChart';
 import './App.css';
 
+const structure = require('./shared/json/state.json');
 
 class App extends Component {
 
@@ -17,27 +18,14 @@ class App extends Component {
     showChart: false,
     showDynamicMap: false,
     generated: false,
-    colors:['#33281b','#4c3c28','#665036','#7f6443','#997851','#b28c5e','#d68624','#f49a61','#ff8914','#ff7d14','#ff6a14','#ff4f14'],
-    stateColor: {'Alabama':['#333'], 'Alaska':['#333'], 'Arizona':['#333'],'Arkansas':['#333'], 'California':['#333'], 'Colorado':['#333'], 'Connecticut':['#333'], 'Delaware':['#333'],'District of Columbia':['#333'], 'Florida':['#333'], 'Georgia':['#333'], 'Hawaii':['#333'], 'Idaho':['#333'],
-    'Illinois':['#333'], 'Indiana':['#333'], 'Iowa':['#333'], 'Kansas':['#333'], 'Kentucky':['#333'], 'Louisiana':['#333'],'Maine':['#333'], 'Maryland':['#333'], 'Massachusetts':['#333'], 'Michigan':['#333'], 'Minnesota':['#333'],
-    'Mississippi':['#333'], 'Missouri':['#333'], 'Montana':['#333'], 'Nebraska':['#333'], 'Nevada':['#333'],'New Hampshire':['#333'], 'New Jersey':['#333'], 'New Mexico':['#333'], 'New York':['#333'],
-    'North Carolina':['#333'], 'North Dakota':['#333'], 'Ohio':['#333'], 'Oklahoma':['#333'], 'Oregon':['#333'],'Pennsylvania':['#333'], 'Rhode Island':['#333'], 'South Carolina':['#333'], 'South Dakota':['#333'],
-    'Tennessee':['#333'], 'Texas':['#333'], 'Utah':['#333'], 'Vermont':['#333'], 'Virginia':['#333'], 'Washington':['#333'],'West Virginia':['#333'], 'Wisconsin':['#333'], 'Wyoming':['#333'],'Grand Princess':['#333']},
-    DynamicColor:{'Alabama':['#333'], 'Alaska':['#333'], 'Arizona':['#333'],'Arkansas':['#333'], 'California':['#333'], 'Colorado':['#333'], 'Connecticut':['#333'], 'Delaware':['#333'],'District of Columbia':['#333'], 'Florida':['#333'], 'Georgia':['#333'], 'Hawaii':['#333'], 'Idaho':['#333'],
-    'Illinois':['#333'], 'Indiana':['#333'], 'Iowa':['#333'], 'Kansas':['#333'], 'Kentucky':['#333'], 'Louisiana':['#333'],'Maine':['#333'], 'Maryland':['#333'], 'Massachusetts':['#333'], 'Michigan':['#333'], 'Minnesota':['#333'],
-    'Mississippi':['#333'], 'Missouri':['#333'], 'Montana':['#333'], 'Nebraska':['#333'], 'Nevada':['#333'],'New Hampshire':['#333'], 'New Jersey':['#333'], 'New Mexico':['#333'], 'New York':['#333'],
-    'North Carolina':['#333'], 'North Dakota':['#333'], 'Ohio':['#333'], 'Oklahoma':['#333'], 'Oregon':['#333'],'Pennsylvania':['#333'], 'Rhode Island':['#333'], 'South Carolina':['#333'], 'South Dakota':['#333'],
-    'Tennessee':['#333'], 'Texas':['#333'], 'Utah':['#333'], 'Vermont':['#333'], 'Virginia':['#333'], 'Washington':['#333'],'West Virginia':['#333'], 'Wisconsin':['#333'], 'Wyoming':['#333'],'Grand Princess':['#333']},
+    colors: structure.color,
+    stateColor: structure.stateColor,
+    DynamicColor: structure.DynamicColor,
     index:0  
   }
 
 
   generateColor=()=>{
-    // let state_color = [];
-    //let copy = this.state.response.states;
-    //this.setState({stateColor:copy});
-    //console.log(this.state.stateColor);
-    //['#61c661','#b1dbb9','#c6e9c6','#ffe693','#ffd950','#ffbb56','#f2b691','#f49a61','#f4833d','#f76d17','ff5619','#ff3f00']
 
     for(let key in this.state.response.states){
       
@@ -82,14 +70,11 @@ class App extends Component {
   }
 
   componentDidMount(){
-    
     this.callApi()
-      .then(res => this.setState({ response: res })) //
+      .then(res => this.setState({ response: res })) 
       .catch(err => console.log(err));
-
-    
-    
   }
+
   callApi = async () => {
     const response = await fetch('/api'); 
     console.log(response);
@@ -101,11 +86,7 @@ class App extends Component {
   };
  
   onClick=(e)=>{
-    //this.generateColor();
-    //const oringinColor = this.state.stateColor;
-    //console.log(oringinColor);
     this.setState({showChart:true,showDynamicMap: false});
-    //this.setState({DynamicColor:oringinColor});
     let Nowstate = e.target.getAttribute('data-name');
     this.setState({NowState:Nowstate});
 
@@ -130,21 +111,9 @@ class App extends Component {
           this.setState({showDynamicMap: false});
         }
       } else {
-        //this.setState({index: 0}); 
-        //this.setState({showDynamicMap: false});
         clearInterval(this.interval);
-        
-        
       }
     }, 1200);
-    // this.timerID = setInterval(
-    //   function(){
-    //     //i = i + 1 ;
-    //     this.setState({index: this.state.index+1});
-    //   },
-    //   1000
-    // );
-    
   }
 
   time=()=>{
@@ -167,8 +136,7 @@ class App extends Component {
           {this.state.showDynamicMap? <Date data = {this.state.response.date} timeIndex={this.state.index}></Date>:null}
           {this.state.showChart?
           <LineChart series={this.state.NowSeries} date={this.state.response.date}/>: null
-          }
-          
+          } d
         </div>
       </div>
     );

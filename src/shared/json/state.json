@@ -1,0 +1,333 @@
+{
+    "colors": [
+        "#33281b",
+        "#4c3c28",
+        "#665036",
+        "#7f6443",
+        "#997851",
+        "#b28c5e",
+        "#d68624",
+        "#f49a61",
+        "#ff8914",
+        "#ff7d14",
+        "#ff6a14",
+        "#ff4f14"
+    ],
+    "stateColor": {
+        "Alabama": [
+            "#333"
+        ],
+        "Alaska": [
+            "#333"
+        ],
+        "Arizona": [
+            "#333"
+        ],
+        "Arkansas": [
+            "#333"
+        ],
+        "California": [
+            "#333"
+        ],
+        "Colorado": [
+            "#333"
+        ],
+        "Connecticut": [
+            "#333"
+        ],
+        "Delaware": [
+            "#333"
+        ],
+        "District of Columbia": [
+            "#333"
+        ],
+        "Florida": [
+            "#333"
+        ],
+        "Georgia": [
+            "#333"
+        ],
+        "Hawaii": [
+            "#333"
+        ],
+        "Idaho": [
+            "#333"
+        ],
+        "Illinois": [
+            "#333"
+        ],
+        "Indiana": [
+            "#333"
+        ],
+        "Iowa": [
+            "#333"
+        ],
+        "Kansas": [
+            "#333"
+        ],
+        "Kentucky": [
+            "#333"
+        ],
+        "Louisiana": [
+            "#333"
+        ],
+        "Maine": [
+            "#333"
+        ],
+        "Maryland": [
+            "#333"
+        ],
+        "Massachusetts": [
+            "#333"
+        ],
+        "Michigan": [
+            "#333"
+        ],
+        "Minnesota": [
+            "#333"
+        ],
+        "Mississippi": [
+            "#333"
+        ],
+        "Missouri": [
+            "#333"
+        ],
+        "Montana": [
+            "#333"
+        ],
+        "Nebraska": [
+            "#333"
+        ],
+        "Nevada": [
+            "#333"
+        ],
+        "New Hampshire": [
+            "#333"
+        ],
+        "New Jersey": [
+            "#333"
+        ],
+        "New Mexico": [
+            "#333"
+        ],
+        "New York": [
+            "#333"
+        ],
+        "North Carolina": [
+            "#333"
+        ],
+        "North Dakota": [
+            "#333"
+        ],
+        "Ohio": [
+            "#333"
+        ],
+        "Oklahoma": [
+            "#333"
+        ],
+        "Oregon": [
+            "#333"
+        ],
+        "Pennsylvania": [
+            "#333"
+        ],
+        "Rhode Island": [
+            "#333"
+        ],
+        "South Carolina": [
+            "#333"
+        ],
+        "South Dakota": [
+            "#333"
+        ],
+        "Tennessee": [
+            "#333"
+        ],
+        "Texas": [
+            "#333"
+        ],
+        "Utah": [
+            "#333"
+        ],
+        "Vermont": [
+            "#333"
+        ],
+        "Virginia": [
+            "#333"
+        ],
+        "Washington": [
+            "#333"
+        ],
+        "West Virginia": [
+            "#333"
+        ],
+        "Wisconsin": [
+            "#333"
+        ],
+        "Wyoming": [
+            "#333"
+        ],
+        "Grand Princess": [
+            "#333"
+        ]
+    },
+    "DynamicColor": {
+        "Alabama": [
+            "#333"
+        ],
+        "Alaska": [
+            "#333"
+        ],
+        "Arizona": [
+            "#333"
+        ],
+        "Arkansas": [
+            "#333"
+        ],
+        "California": [
+            "#333"
+        ],
+        "Colorado": [
+            "#333"
+        ],
+        "Connecticut": [
+            "#333"
+        ],
+        "Delaware": [
+            "#333"
+        ],
+        "District of Columbia": [
+            "#333"
+        ],
+        "Florida": [
+            "#333"
+        ],
+        "Georgia": [
+            "#333"
+        ],
+        "Hawaii": [
+            "#333"
+        ],
+        "Idaho": [
+            "#333"
+        ],
+        "Illinois": [
+            "#333"
+        ],
+        "Indiana": [
+            "#333"
+        ],
+        "Iowa": [
+            "#333"
+        ],
+        "Kansas": [
+            "#333"
+        ],
+        "Kentucky": [
+            "#333"
+        ],
+        "Louisiana": [
+            "#333"
+        ],
+        "Maine": [
+            "#333"
+        ],
+        "Maryland": [
+            "#333"
+        ],
+        "Massachusetts": [
+            "#333"
+        ],
+        "Michigan": [
+            "#333"
+        ],
+        "Minnesota": [
+            "#333"
+        ],
+        "Mississippi": [
+            "#333"
+        ],
+        "Missouri": [
+            "#333"
+        ],
+        "Montana": [
+            "#333"
+        ],
+        "Nebraska": [
+            "#333"
+        ],
+        "Nevada": [
+            "#333"
+        ],
+        "New Hampshire": [
+            "#333"
+        ],
+        "New Jersey": [
+            "#333"
+        ],
+        "New Mexico": [
+            "#333"
+        ],
+        "New York": [
+            "#333"
+        ],
+        "North Carolina": [
+            "#333"
+        ],
+        "North Dakota": [
+            "#333"
+        ],
+        "Ohio": [
+            "#333"
+        ],
+        "Oklahoma": [
+            "#333"
+        ],
+        "Oregon": [
+            "#333"
+        ],
+        "Pennsylvania": [
+            "#333"
+        ],
+        "Rhode Island": [
+            "#333"
+        ],
+        "South Carolina": [
+            "#333"
+        ],
+        "South Dakota": [
+            "#333"
+        ],
+        "Tennessee": [
+            "#333"
+        ],
+        "Texas": [
+            "#333"
+        ],
+        "Utah": [
+            "#333"
+        ],
+        "Vermont": [
+            "#333"
+        ],
+        "Virginia": [
+            "#333"
+        ],
+        "Washington": [
+            "#333"
+        ],
+        "West Virginia": [
+            "#333"
+        ],
+        "Wisconsin": [
+            "#333"
+        ],
+        "Wyoming": [
+            "#333"
+        ],
+        "Grand Princess": [
+            "#333"
+        ]
+    },
+    "index": 0
+}
