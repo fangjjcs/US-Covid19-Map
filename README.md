@@ -1,7 +1,7 @@
 # US-COVID19-Map
 An React.js practice for reporting cases of COVID19 in U.S.
 
-> This is my react practice started at 2020 and was refactorized once at 2022/6 
+> This is my react practice in 2020 and was refactorized once in 2022/6 
 
 Using Flask as server side, parse open data from https://github.com/CSSEGISandData/COVID-19, preprocess source data and returns to front-end website.
 
