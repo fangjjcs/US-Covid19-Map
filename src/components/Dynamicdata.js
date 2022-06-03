@@ -1,6 +1,6 @@
 import React from "react";
 
-function Date(props) {
+function DynamicData(props) {
 
     const styleFont = {
         color: "#333"
@@ -12,4 +12,4 @@ function Date(props) {
     );
 }
 
-export default Date;
+export default DynamicData;

@@ -4,7 +4,7 @@ import './App.css';
 import Map from './components/Map';
 import InfoBox from './components/InfoBox';
 import Scale from './components/Scale';
-import Date from './components/Dynamicdata';
+import DynamicData from './components/DynamicData';
 import LineChart from './components/LineChart';
 
 const structure = require('./shared/json/state.json');
@@ -128,7 +128,7 @@ class App extends Component {
         <div className="InfoBox">
           <InfoBox nowState={this.state.NowState}/>
           {this.state.generated || this.state.showChart? null:<p className="floating">{this.state.beginString}</p>}
-          {this.state.showDynamicMap? <Date data = {this.state.response.date} timeIndex={this.state.index}></Date>:null}
+          {this.state.showDynamicMap? <DynamicData data = {this.state.response.date} timeIndex={this.state.index}></DynamicData>:null}
           {this.state.showChart?
           <LineChart series={this.state.NowSeries} date={this.state.response.date}/>: null
           }
